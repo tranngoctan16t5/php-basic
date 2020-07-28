@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>thoi gian hien tai</title>
 </head>
 <body>
-	<h1 style="background-color: green"> hello cau chu tan</h1>
+	<h1>Bay gio la: <?php echo date('Y-M-d h:m:s'); ?></h1>
 </body>
 </html>
