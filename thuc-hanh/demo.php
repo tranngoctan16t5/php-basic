@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<?php
-	$name = "tan pro";
-	define("NAME", "tran linh");
-	echo strlen($name);
-	echo strrev("helle");
-	echo "<br>";
-	echo strpos("hello word", "dsdsf");
-	echo "<br>";
-	echo str_replace("tan", "linh", "tran ngoc tan");
-	echo "<br>";
-	echo NAME;
+<?php 
+$str = "    TrAn    nGOc   tAN    ";
+echo strlen($str) . "<br>"; // dua ve 13 ki tu
+$str = strtolower($str);
+echo $str . "<br>";
+$str = trim($str);
+$array = explode(" ",$str);
 
-	?>
-	</body>
-	</html>
+foreach ($array as $key => $value) {
+	if(trim($value) == null) unset($array[$key]);
+}
+
+echo "<pre>";
+print_r($array);
+echo "</pre>";
+
+echo $str = implode(" ",$array);
+echo strlen($str);
+ ?>
